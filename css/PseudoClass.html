@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS伪类</title>
+    <style type="text/css">
+        #test:hover {
+            color: beige;
+        }
+        #koko {
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+        }
+        #test1:hover p{
+            display: block;
+        }
+        #test2:first-child i{
+        color: blue;
+        }
+    </style>
+</head>
+<body>
+<p>Pseudo-class伪类:用于定义元素特殊状态</p>
+<!--鼠标悬停状态-->
+<p id="test">鼠标悬停</p>
+<!--伪类结合多个元素样式-->
+<div id="test1">伪类结合多个元素样式
+    <p id="koko">Tada! Here I am!</p>
+</div>
+<!--:first-child伪类匹配-->
+<p id="test2">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+</body>
+</html>
